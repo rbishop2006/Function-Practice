@@ -78,9 +78,32 @@ oddNum(numbers)
 // 5. Find words that contain `is`
 // ---------------------------
 
+function isOnly(str3) {
+  var onlyIs = []
+  for (var i = 0; i < str3.length; i++)
+    if (str3[i].includes("is")) {
+      onlyIs.push(str3[i])
+    }
+  console.log(onlyIs)
+}
+isOnly(strings)
+
 // ---------------------------
 // 5. Join Both Arrays Together
 // ---------------------------
+
+function joinThem(str4, str5) {
+  var joined = []
+  for (var i = 0; i < str4.length; i++) {
+    joined.push(str4[i])
+  }
+  for (var i = 0; i < str5.length; i++) {
+    joined.push(str5[i])
+  }
+  console.log(joined)
+}
+
+joinThem(strings, numbers)
 
 // ---------------------------
 // 6. Use the Instructors array and find all that teach JavaScript,
